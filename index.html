@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script>
         // You can also require other files to run in this process
+        window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');
         require('./assets/js/renderer.js');
         require('./node_modules/metro-dist/js/metro.js');
     </script>
 </head>
 <body style="overflow-y: hidden;">
-<div class="tile-area fg-white tile-area-scheme-dark" style="height: 100%; max-height: 100% !important; width: 100%;">
+<div class="tile-area tile-area-scheme-darkTeal fg-white" style="height: 100%; max-height: 100% !important;">
     <h1 class="tile-area-title">华鹤意居
         <small>帮您实现对家的梦想</small>
     </h1>
 
     <div class="tile-area-controls">
         <a href="javascript:window.close();"
-           class="square-button bg-transparent fg-white bg-grayDark bg-hover-dark no-border">
+           class="square-button bg-transparent fg-white bg-darkBlue bg-hover-darkTeal no-border">
             <span class="mif-switch"></span>
         </a>
     </div>
@@ -104,7 +105,7 @@
     </div>
 
     <div class="tile-group three">
-            <span class="tile-group-title">旗舰店</span>
+            <span class="tile-group-title">官方旗舰店</span>
             <div class="tile-container">
                 <a href="https://huahejj.tmall.com/search.htm?spm=a220m.1000858.1000725.3.KvI7Fi&user_number_id=2990197289&rn=8ac81959dda817401fb6624e10f7fbb4&keyword=%BB%AA%BA%D7"
                    class="tile-wide bg-orange fg-white" data-role="tile">
@@ -147,7 +148,6 @@
                         <img src="./assets/img/hh-mumen2-3.jpg">
                         <img src="./assets/img/tianmao.png">
                         <img src="./assets/img/hh-mumen2-4.jpg">
-
                     </div>
                 </a>
             </div>
