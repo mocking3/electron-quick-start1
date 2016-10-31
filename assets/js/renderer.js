@@ -39,10 +39,10 @@ const shell = require('electron').shell;
 $(function () {
     $.StartScreen();
 
-    const links = document.querySelectorAll('a[href]');
+    const links = document.querySelectorAll('a[electron-href]');
 
     Array.prototype.forEach.call(links, function (link) {
-        const url = link.getAttribute('href');
+        const url = link.getAttribute('electron-href');
         if (url.indexOf('http') === 0 || url.indexOf('file') === 0) {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
