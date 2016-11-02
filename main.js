@@ -2,6 +2,12 @@ const electron = require('electron');
 
 const app = electron.app;
 
+const AutoLaunch = require('auto-launch');
+
+var autoLauncher = new AutoLaunch({
+    name: 'sinocrane guid'
+});
+
 // this should be placed at top of main.js to handle setup events quickly
 if (handleSquirrelEvent()) {
     // squirrel event handled and app will exit in 1000ms, so don't do anything else
@@ -47,6 +53,8 @@ function handleSquirrelEvent() {
             // Install desktop and start menu shortcuts
             spawnUpdate(['--createShortcut', exeName]);
 
+            autoLauncher.enable();
+
             setTimeout(app.quit, 1000);
             return true;
 
@@ -56,6 +64,8 @@ function handleSquirrelEvent() {
 
             // Remove desktop and start menu shortcuts
             spawnUpdate(['--removeShortcut', exeName]);
+
+            autoLauncher.disable();
 
             setTimeout(app.quit, 1000);
             return true;
