@@ -37,6 +37,11 @@ const shell = require('electron').shell;
    }
 })(jQuery);
 $(function () {
+
+    if(screen.width == 1920){
+         $("body").css("zoom","1.2");
+    }
+
     $.StartScreen();
 
     const links = document.querySelectorAll('a[electron-href]');

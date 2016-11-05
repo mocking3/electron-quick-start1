@@ -53,3 +53,18 @@ div, h1, h2, span {
     }
 
 }
+
+.hh-logo {
+    height: 55px;
+    width: 55px;
+    margin-top: -9px;
+}
+h1 small, h2 small, span small {
+    font-weight: 400;
+    font-size: 0.6em;
+    line-height: 1;
+    color: #d9d9d9;
+}
+.tile-group .tile-group-title {
+    font-size: 20px;
+}
