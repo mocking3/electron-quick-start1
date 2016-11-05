@@ -91,9 +91,9 @@ function createWindow () {
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-  globalShortcut.register('CmdOrCtrl+Shift+d', () => {
-    mainWindow.webContents.toggleDevTools();
-  });
+  // globalShortcut.register('CmdOrCtrl+Shift+d', () => {
+  //   mainWindow.webContents.toggleDevTools();
+  // });
 
   mainWindow.on('closed', function () {
     mainWindow = null;
