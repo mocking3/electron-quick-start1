@@ -39,7 +39,7 @@ const shell = require('electron').shell;
 $(function () {
 
     if(screen.width == 1920){
-         $("body").css("zoom","1.2");
+         $("body").css("zoom","1.5");
     }
 
     $.StartScreen();
