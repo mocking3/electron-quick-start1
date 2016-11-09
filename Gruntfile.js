@@ -10,7 +10,7 @@ grunt.config.init({
             description:"华鹤意居大屏展示引导页",
             version: "1.0.0",
             title: "华鹤意居",
-            // iconUrl: "./assets/img/logo.png",
+            iconUrl: "http://www.sinocrane.com/favicon.ico",
             setupIcon:  "./assets/img/app-icon/win/app.ico"
         }
     }
