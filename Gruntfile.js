@@ -8,7 +8,7 @@ grunt.config.init({
             loadingGif: './assets/img/loading.gif',
             authors: '华鹤集团',
             description:"华鹤意居大屏展示引导页",
-            version: "1.0.4",
+            version: "1.0.0",
             title: "华鹤意居",
             // iconUrl: "./assets/img/logo.png",
             setupIcon:  "./assets/img/app-icon/win/app.ico"

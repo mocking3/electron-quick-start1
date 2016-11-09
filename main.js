@@ -32,7 +32,9 @@ function handleSquirrelEvent() {
 
         try {
             spawnedProcess = ChildProcess.spawn(command, args, {detached: true});
-        } catch (error) {}
+        } catch (error) {
+            console.log(error);
+        }
 
         return spawnedProcess;
     };
@@ -52,7 +54,7 @@ function handleSquirrelEvent() {
 
             // Install desktop and start menu shortcuts
             spawnUpdate(['--createShortcut', exeName]);
-
+            //
             autoLauncher.enable();
 
             setTimeout(app.quit, 1000);
