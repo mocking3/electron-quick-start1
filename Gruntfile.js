@@ -6,10 +6,10 @@ grunt.config.init({
             appDirectory: './dist/sinocrane_guid-win32-x64',
             outputDirectory: './dist',
             loadingGif: './assets/img/loading.gif',
-            authors: 'machine',
+            authors: '华鹤集团',
             description:"华鹤意居大屏展示引导页",
-            version: "1.0.3",
-            title: "华鹤意居引导页",
+            version: "1.0.4",
+            title: "华鹤意居",
             // iconUrl: "./assets/img/logo.png",
             setupIcon:  "./assets/img/app-icon/win/app.ico"
         }
